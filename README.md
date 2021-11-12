@@ -11,7 +11,7 @@ gfortran src/analyze_alphafold2_metal_clusters_for_release.f -o analyze_alphafol
 
 All geometric values are in angstroms
 ```
-analyze_alphafold2_metal_clusters_for_release.exe in.PDB ligand_list_file regionDistanceMinium regionDistanceMaximum stericClashCutoff disulfideCutoff addBbnAtomCutoff ligandLigandClashCutoff jobID
+analyze_alphafold2_metal_clusters_for_release.exe in.pdb ligand_list_file regionDistanceMinium regionDistanceMaximum stericClashCutoff disulfideCutoff addBbnAtomCutoff ligandLigandClashCutoff jobID
 ```
 
 In order the arguements are:
@@ -42,4 +42,3 @@ analyze_alphafold2_metal_clusters_for_release.exe AF-P08201-F1-model_v1.pdb liga
 ```
 ## Citing us
 Please cite the following work if you use our code:
-PAPER
