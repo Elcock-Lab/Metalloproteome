@@ -42,7 +42,7 @@ analyze_alphafold2_metal_clusters_for_release.exe AF-P08201-F1-model_v1.pdb liga
 ```
 
 ## Data
-The `analyze_alphafold2_metal_clusters_for_release.exe` was run on the 21 proteomes that were predicted with AlphaFold2. The results of this effort can be found in the `DATA` folder, which contains an excel file containing summary information about each ligand binding site that we identified and folders for each organism containing a `.tar` file of the liganded pdb files.
+The `analyze_alphafold2_metal_clusters_for_release.exe` was run on the 21 proteomes that were predicted with AlphaFold2. The results of this effort can be found in the `DATA` folder, which contains an excel file containing summary information about each ligand binding site that we identified and folders for each organism containing a `.tar` file of the pdb files containing the ligand coordinates.
 
 ## Citing us
-Please cite the following work if you use our code:
+Please cite the following work if you use our code or our data:
