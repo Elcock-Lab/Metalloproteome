@@ -1,7 +1,7 @@
 # Metalloproteome
 
 
-## Compile the code
+## Compiling the code
 Assuming a GNU fortran compiler 
 ```
 gfortran src/analyze_alphafold2_metal_clusters_for_release.f -o analyze_alphafold2_metal_clusters_for_release.exe
