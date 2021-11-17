@@ -2,7 +2,7 @@
 
 
 ## Compiling the code
-A precompiled executable can be found in the /bin folder. If you wish to recompile the code, e.g. after making some modifications, you can recompile it using the GNU fortran compiler thus: 
+A precompiled executable can be found in the `bin` folder. If you wish to recompile the code, e.g. after making some modifications, you can recompile it using the GNU fortran compiler thus: 
 ```
 gfortran src/analyze_alphafold2_metal_clusters_for_release.f -o analyze_alphafold2_metal_clusters_for_release.exe
 ```
@@ -54,7 +54,7 @@ ligand_sites_XXXXXX.pdb                    = A PDB file containing the superimpo
 The `XXXXXX` in the files above corresponds to the `jobID` input argument.
 
 ## Data
-The code was run on the 21 proteomes that were predicted with AlphaFold2. The results of this effort can be found in the `DATA` folder, which contains both a single excel file (`ligand_binding_sites_summary.xlsx`) with summary information about each ligand binding site that we identified, and separate folders for each organism containing a `.tar` file combining all of the ligand_sites_XXXXXX.pdb files.
+The code was run on the 21 proteomes that were predicted with AlphaFold2. The results of this effort can be found in the `DATA` folder, which contains both a single excel file (`LIGAND_BINDING_SITES_SUMMARY/ligand_binding_sites_summary.xlsx`) with summary information about each ligand binding site that we identified, and separate folders for each organism containing a `.tar` file combining all of the `ligand_sites_XXXXXX.pdb` files.
 
 ## Citing us
 Please cite the following work if you use our code or our data:
