@@ -1,11 +1,31 @@
 
-C this is code for release to the community
-C for internal purposes note that it should be functionally identical
-C to:
+C This is code for release to the community in an "as is" form.
 
-C analyze_alphafold2_metal_regions_final_check_clashes_general_extended_clashfix.f
+C Details on how to run the code are provided in README.md
 
+C The code, as written, should correctly handle cases where 
+C coordinating residues are CYS, HIS, and ASP - it also allows users to
+C specify an ASP *or* GLU situation by specifying a residue type "DOE" 
+C (Asp Or Glu). The code *also* will allow one type of backbone atom 
+C (either the carbonyl oxygen "O", or the nitrogen "N") to be used as 
+C a coordinating atom type, although this part of the code has not been
+C tested extensively (bear in mind that the "regions" can get very large
+C when backbone atoms are included). Please note that when ASP, HIS or 
+C DOE residues are specifided as coordinating residues the code looks 
+C for two atoms per residue (e.g. ND1 and NE2 for HIS) but only allows 
+C one of them at a time to form part of a ligand binding site. In other 
+C words, the code does not consider the possibility that *both* the ND1 
+C and NE2 atoms in the *same* HIS residue might be coordinating the 
+C *same* ligand molecule. This seems entirely reasonable for the ligand
+C types that we searched for, but may need reconsidering for much larger
+C ligand types... Note that for CYS, ASP and DOE residues we allow each 
+C atom to coordinate two *different* ligands, but for HIS residues we 
+C allow each atom to only coordinate one ligand.
 
+C One final point to note is that the code is currently hardwired to 
+C allow a maximum of *six* coordinating atoms to be used in the ligand 
+C superposition calculations. In our work we have used a maximum of four
+C coordinating atoms but the code should work correctly beyond this.
 
       program fit_ligand_molecules
  
