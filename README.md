@@ -57,4 +57,5 @@ The `XXXXXX` in the files above corresponds to the `jobID` input argument.
 The code was run on the 21 proteomes that were predicted with AlphaFold2. The results of this effort can be found in the `DATA` folder, which contains both a single excel file (`LIGAND_BINDING_SITES_SUMMARY/ligand_binding_sites_summary.xlsx`) with summary information about each ligand binding site that we identified, and separate folders for each organism containing a `.tar` file combining all of the `ligand_sites_XXXXXX.pdb` files.
 
 ## Citing us
-Please cite the following work if you use our code or our data:
+Please cite the following work if you use our code or our data:  
+Wehrspan ZJ, McDonnell RT, Elcock AH. Identification of Iron-Sulfur (Fe-S) Cluster and Zinc (Zn) Binding Sites Within Proteomes Predicted by DeepMind’s AlphaFold2 Program Dramatically Expands the Metalloproteome. Journal of Molecular Biology. 2022;434(2):167377. https://doi.org/10.1016/j.jmb.2021.167377 pmid:34838520
